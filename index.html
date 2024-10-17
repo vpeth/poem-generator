@@ -7,39 +7,41 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome!</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a topic"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        blabla
-        <br />
-        blablabla
-      </div>
-    </main>
+    <div class="container">
+      <header>
+        <h1>✧ Generate Beautiful Poems ✧</h1>
+      </header>
+      <main>
+        <form aria-label="Poem topic input form">
+          <input
+            type="text"
+            placeholder="Enter a topic, e.g., love, nature"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+            aria-label="Poem topic input"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem" aria-live="polite">Your poem will appear here...</div>
+      </main>
 
-    <footer>
-      This AI project was developed with 💖 by
-      <a href="https://github.com/vpeth" target="_blank">Valeria Solano.</a>
-      Open-source on
-      <a href="https://github.com/vpeth/poem-generator" target="_blank"
-        >GitHub</a
-      >
-      and deployed via
-      <a href="https://v-ai-poem-generator.netlify.app/" target="_blank"
-        >Netlify.</a
-      >
-    </footer>
+      <footer>
+        <p>
+          This AI project was developed with 💖 by
+          <a href="https://github.com/vpeth" target="_blank">Valeria Solano.</a>
+          Open-source on
+          <a href="https://github.com/vpeth/poem-generator" target="_blank"
+            >GitHub</a
+          >
+          and deployed via
+          <a href="https://v-ai-poem-generator.netlify.app/" target="_blank"
+            >Netlify.</a
+          >
+        </p>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
